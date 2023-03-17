@@ -30,7 +30,7 @@ const Chatbot = () => {
             showConversationsButton: true,
             avatarURL: "https://app.botpress.cloud/chatbots/abstract-26.svg",
             enableTranscriptDownload: false,
-            stylesheet: "https://botpress-webchat.vercel.app/chat.css",
+            stylesheet: "http:localhost:3000/chat.css",
           });
 
           window.botpressWebChat.onEvent(

@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: Inter;
+  font-family: Gilroy;
   overflow: hidden;
 }
 
@@ -1289,11 +1289,13 @@ body {
 .bpw-from-bot .bpw-chat-bubble {
   background-color: #18181B;
   color: #696969;
+  max-width: 60%;
 }
 
 .bpw-from-user .bpw-chat-bubble {
   color: white;
   background: #6366F1;
+  max-width: 60%;
 }
 
 .bpw-keyboard-quick_reply {
