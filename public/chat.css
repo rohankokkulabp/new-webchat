@@ -819,15 +819,15 @@ body {
 
 .bpw-header-icon svg,
 .bpw-header-icon svg path {
-  fill: #e3e3ff;
+  fill: #282964;
   transition: fill 0.3s;
-  height: 24px;
+  height: 20px;
 }
 
 .bpw-header-icon:hover,
 .bpw-header-icon:hover svg,
 .bpw-header-icon:hover svg path {
-  fill: #282964;
+  fill: #e3e3ff;
 }
 
 .bpw-floating-button {
