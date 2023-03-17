@@ -164,10 +164,11 @@ body {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  padding-right: 18px;
-  padding-left: 0;
+  padding-left: 18px;
 }
-
+.bpw-keyboard-single-choice{
+  display: none;
+}
 .bpw-message-container {
   width: 100%;
   -webkit-box-orient: vertical;
@@ -218,9 +219,6 @@ body {
   float: right;
 }
 
-.bpw-from-user {
-  padding-right: 0;
-}
 
 .bpw-from-user .bpw-message-container {
   -webkit-box-pack: end;
@@ -233,6 +231,7 @@ body {
 
 .bpw-from-user .bpw-message-group {
   padding-left: 60px;
+  padding-right: 18px;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
