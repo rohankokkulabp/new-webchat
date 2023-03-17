@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: Roboto;
+  font-family: Gilroy;
   overflow: hidden;
 }
 
@@ -651,6 +651,8 @@ body {
 .bpw-composer-inner {
   display: flex;
   margin: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .bpw-composer-textarea {
@@ -679,17 +681,24 @@ body {
 
 .bpw-send-buttons {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.bpw-send-button {
-  border: none;
-  border-radius: 5px;
-  background: #fff;
-  padding: 5px;
-  font-size: 20px;
-  font-weight: 500;
+#btn-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #6366F1;
+  padding: 20px;
+  width: 24px;
+  color: transparent;
+  height: 24px;
   cursor: pointer;
+  background-image: url('send-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .bpw-send-button:hover,
