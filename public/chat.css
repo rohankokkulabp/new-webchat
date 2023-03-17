@@ -27,13 +27,15 @@ body {
 }
 
 .bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
-  background-color: #6366F1;
+  background-color: #5643ff;
 }
 
 .bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
-  background-color: #18181B;
-  color: white;
+  background-color: #F3F4F6;
+  color: rgb(0, 0, 0);
 }
+
+
 
 .bp-emulator-history .bpw-chat-bubble {
   color: #000000;
@@ -71,21 +73,7 @@ body {
 
 .bpw-chat-container {
   background-color: #ffffff;
-  color: #000000;
-}
-
-.bpw-layout {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  border: none;
-  -webkit-box-orient: vertical;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #ffffff;
 }
 
 .bpw-layout-fullscreen {
@@ -301,7 +289,7 @@ body {
 }
 
 .bpw-date-container .bpw-small-line {
-  border-bottom: solid 1px #6366f1;
+  border-bottom: solid 1px #5643ff;
   margin: auto;
   width: 80px;
   margin-top: 5px;
@@ -558,7 +546,7 @@ body {
 
 .bpw-convo-add-btn {
   background: transparent;
-  border: 2px solid;
+  border: 2px solid #5643ff;
   border-radius: 50%;
   float: right;
   margin-right: 15px;
@@ -683,6 +671,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 }
 
 #btn-send {
@@ -690,7 +679,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background-color: #6366F1;
+  background-color: #5643ff;
   padding: 20px;
   width: 24px;
   color: transparent;
@@ -920,6 +909,7 @@ body {
 .bpw-botinfo-description {
   margin-top: 0.4em;
   margin-bottom: 1em;
+  overflow: scroll;
 }
 
 .bpw-botinfo-summary h3 {
@@ -1154,13 +1144,13 @@ body {
 }
 
 .bpw-card-buttons {
-  background-color: #6366F1;
+  background-color: #F3F4F6;
   color: white;
   font-weight: bold;
 }
 
 .bpw-card-buttons a:visited {
-  color: white;
+  color: rgb(71, 71, 71);
 }
 
 .bpw-card-header {
@@ -1182,7 +1172,7 @@ body {
 }
 
 .bpw-header-container {
-  background-color: #6366F1;
+  background-color: #5643ff;
   color: #fff;
   border-radius: 10px 10px 0 0;
   height: 90px;
@@ -1228,18 +1218,33 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70%;
   border-radius: 10px;
+  border-left: none;
+  height: 70%;
   width: 50% !important;
-  box-shadow: 0px 5px 15px -10px #6366f1;
+  box-shadow: 0px 5px 15px -10px #5643ff;
 }
 
-@media (max-device-width: 767px) {
+@media only screen and (max-width: 767px) {
   .bpw-layout {
-    height: 100%;
-    bottom: 0;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .bpw-header-container{
+    border-radius: 0px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .bpw-layout {
+    height: 70% !important;
+    width: 90% !important;
+  }
+  .bpw-header-container{
+    border-radius: 0px;
+  }
+}
+
+
 
 .bpw-powered {
   border-top: none;
@@ -1248,7 +1253,7 @@ body {
 }
 
 .bpw-powered a {
-  color: #6366F1;
+  color: #5643ff;
 }
 
 .bpw-keyboard {
@@ -1263,7 +1268,7 @@ body {
 .bpw-composer-inner {
   border-radius: 15px;
   background-color: #f4f4ff;
-  color: #6366f1;
+  color: #5643ff;
 }
 
 .bpw-composer textarea::placeholder {
@@ -1285,14 +1290,15 @@ body {
 }
 
 .bpw-from-bot .bpw-chat-bubble {
-  background-color: #18181B;
+  background-color: #F3F4F6;
   color: #696969;
+  border-radius: 12px 12px 12px 4px;
   max-width: 60%;
 }
 
 .bpw-from-user .bpw-chat-bubble {
   color: white;
-  background: #6366F1;
+  background: #5643ff;
   max-width: 60%;
 }
 
@@ -1311,7 +1317,7 @@ body {
   padding: 8px 12px;
   margin-right: 5px;
   height: inherit;
-  background: #6366F1;
+  background: #5643ff;
   color: white;
   font-size: 0.85rem;
 }
@@ -1333,7 +1339,7 @@ body {
 }
 
 .choice-dropdown>div {
-  background-color: #6366F1;
+  background-color: #5643ff;
   border-color: #c6c6c6 !important;
   box-shadow: none !important;
 }
@@ -1343,18 +1349,18 @@ body {
 }
 
 .choice-dropdown>div+div {
-  background-color: #18181B;
+  background-color: #F3F4F6;
 }
 
 .choice-dropdown>div+div>div {
   padding: 0;
   color: #696969;
-  background-color: #18181B !important;
-  border-color: #6366F1 !important;
+  background-color: #F3F4F6 !important;
+  border-color: #5643ff !important;
 }
 
 .choice-dropdown>div+div [id^='react-select'] {
-  background-color: #18181B !important;
+  background-color: #F3F4F6 !important;
 }
 
 .choice-dropdown>div+div [id^='react-select']:hover {
@@ -1362,9 +1368,6 @@ body {
   background-color: #696969 !important;
 }
 
-.choice-dropdown input {
-  display: none;
-}
 
 .bpw-send-button {
   display: block;
@@ -1381,6 +1384,6 @@ body {
   height: 34px;
   margin: auto;
   display: block;
-  background: #6366F1;
+  background: #5643ff;
   color: white;
 }

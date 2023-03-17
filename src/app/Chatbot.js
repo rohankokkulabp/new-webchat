@@ -9,21 +9,21 @@ const Chatbot = () => {
       const script = document.createElement("script");
       script.src = "https://cdn.botpress.cloud/webchat/v0/inject.js";
       script.async = true;
-      document.querySelector(".chatbot-container").appendChild(script);
+      document.body.appendChild(script);
       script.addEventListener("load", () => {
         try {
           window.botpressWebChat.init({
-            botId: "b888692e-abd1-43a0-8c4e-cfe9dfddcfb3",
+            botId: "09d8ea5b-2781-4fe4-a0b5-d75798b24c50",
             hostUrl: "https://cdn.botpress.cloud/webchat/v0",
             messagingUrl: "https://messaging.botpress.cloud",
-            clientId: "b888692e-abd1-43a0-8c4e-cfe9dfddcfb3",
-            botName: "AI Public Personality",
+            clientId: "09d8ea5b-2781-4fe4-a0b5-d75798b24c50",
+            botName: "Dummy Bot - SE",
             showPoweredBy: true,
             containerWidth: "100%25",
             layoutWidth: "100%25",
             showCloseButton: false,
             botConversationDescription:
-              "A simple chatbot that demonstrates integration of ChatGPT, with Botpress",
+              "Chat with this amazing bot built surprisingly fast in Botpress",
             hideWidget: true,
             disableAnimations: true,
             closeOnEscape: false,
@@ -37,13 +37,6 @@ const Chatbot = () => {
           window.botpressWebChat.onEvent(
             function () {
               window.botpressWebChat.sendEvent({ type: "show" });
-              window.botpressWebChat.sendEvent({
-                type: "proactive-trigger",
-                channel: "web",
-                payload: {
-                  text: "Hi, I am Pro active",
-                },
-              });
             },
             ["LIFECYCLE.LOADED"]
           );
@@ -53,7 +46,7 @@ const Chatbot = () => {
         }
       });
       return () => {
-        document.querySelector(".chatbot-container").removeChild(script);
+        document.body.removeChild(script);
       };
     }
   }, [scriptLoaded]);
@@ -61,24 +54,4 @@ const Chatbot = () => {
   return <></>;
 };
 
-const ChatbotWithRectangle = () => {
-  return (
-    <div style={{ display: "flex", alignItems: "center" }}>
-      <div
-        style={{
-          height: "100%",
-          width: "500px",
-          backgroundColor: "gray",
-          marginRight: "10px",
-        }}
-      />
-      <div style={{ flex: 1 }}>
-        <div className="chatbot-container">
-          <Chatbot />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default ChatbotWithRectangle;
+export default Chatbot;
