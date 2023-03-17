@@ -17,7 +17,7 @@ const Chatbot = () => {
             hostUrl: "https://cdn.botpress.cloud/webchat/v0",
             messagingUrl: "https://messaging.botpress.cloud",
             clientId: "b888692e-abd1-43a0-8c4e-cfe9dfddcfb3",
-            botName: "ChatGPT x Botpress",
+            botName: "AI Public Personality",
             showPoweredBy: true,
             containerWidth: "100%25",
             layoutWidth: "100%25",
