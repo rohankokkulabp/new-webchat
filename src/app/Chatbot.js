@@ -28,7 +28,6 @@ const Chatbot = () => {
             disableAnimations: true,
             closeOnEscape: false,
             showConversationsButton: true,
-            avatarURL: "https://app.botpress.cloud/chatbots/abstract-26.svg",
             enableTranscriptDownload: true,
             stylesheet: "https://botpress-webchat.vercel.app/chat.css",
             // stylesheet: "http://localhost:3000/chat.css",

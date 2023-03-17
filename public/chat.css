@@ -1158,9 +1158,7 @@ body {
 
 .bpw-floating-button {
   background-color: rgb(204, 173, 0);
-  background-image: url('./botpress-gold.png');
   border-radius: 50%;
-
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: none;
