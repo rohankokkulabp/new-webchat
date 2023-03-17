@@ -73,7 +73,7 @@ body {
 
 .bpw-chat-container {
   background-color: #ffffff;
-  color: #ffffff;
+  color: #000000;
 }
 
 .bpw-layout-fullscreen {
@@ -1240,11 +1240,12 @@ body {
   .bpw-from-user .bpw-chat-bubble {
     max-width: 100% !important;
   }
+
   .bpw-from-bot .bpw-chat-bubble {
     max-width: 90% !important;
   }
 
-  .bpw-composer textarea{
+  .bpw-composer textarea {
     height: 80px;
   }
 }
