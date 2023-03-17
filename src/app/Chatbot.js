@@ -13,10 +13,10 @@ const Chatbot = () => {
       script.addEventListener("load", () => {
         try {
           window.botpressWebChat.init({
-            botId: "09d8ea5b-2781-4fe4-a0b5-d75798b24c50",
+            botId: "b888692e-abd1-43a0-8c4e-cfe9dfddcfb3",
             hostUrl: "https://cdn.botpress.cloud/webchat/v0",
             messagingUrl: "https://messaging.botpress.cloud",
-            clientId: "09d8ea5b-2781-4fe4-a0b5-d75798b24c50",
+            clientId: "b888692e-abd1-43a0-8c4e-cfe9dfddcfb3",
             botName: "ChatGPT x Botpress",
             showPoweredBy: true,
             containerWidth: "100%25",
