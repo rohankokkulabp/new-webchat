@@ -23,7 +23,7 @@ const Chatbot = () => {
             layoutWidth: "100%25",
             showCloseButton: false,
             botConversationDescription:
-              "Chat with this amazing bot built surprisingly fast in Botpress",
+              "Chat with this bot built surprisingly fast in Botpress",
             hideWidget: true,
             disableAnimations: true,
             closeOnEscape: false,

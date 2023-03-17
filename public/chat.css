@@ -909,7 +909,6 @@ body {
 .bpw-botinfo-description {
   margin-top: 0.4em;
   margin-bottom: 1em;
-  overflow: scroll;
 }
 
 .bpw-botinfo-summary h3 {
@@ -1225,21 +1224,43 @@ body {
   box-shadow: 0px 5px 15px -10px #5643ff;
 }
 
+/* mobile device */
 @media only screen and (max-width: 767px) {
   .bpw-layout {
     height: 100% !important;
     width: 100% !important;
   }
-  .bpw-header-container{
+
+  .bpw-header-container {
     border-radius: 0px;
   }
+
+  .bpw-header-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .bpw-from-user .bpw-chat-bubble {
+    max-width: 100% !important;
+  }
+  .bpw-from-bot .bpw-chat-bubble {
+    max-width: 90% !important;
+  }
+
+  .bpw-composer textarea{
+    height: 80px;
+  }
 }
+
+
+
+/* tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .bpw-layout {
     height: 70% !important;
     width: 90% !important;
   }
-  .bpw-header-container{
+
+  .bpw-header-container {
     border-radius: 0px;
   }
 }
