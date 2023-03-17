@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: Gilroy;
+  font-family: Inter;
   overflow: hidden;
 }
 
@@ -166,9 +166,11 @@ body {
   align-items: flex-end;
   padding-left: 18px;
 }
-.bpw-keyboard-single-choice{
+
+.bpw-keyboard-single-choice {
   display: none;
 }
+
 .bpw-message-container {
   width: 100%;
   -webkit-box-orient: vertical;
