@@ -1287,14 +1287,12 @@ body {
 
 .bpw-from-bot .bpw-chat-bubble {
   background-color: #18181B;
-  border: 1px solid #dcc69e;
   color: #696969;
 }
 
 .bpw-from-user .bpw-chat-bubble {
   color: white;
   background: #6366F1;
-  border: 1px solid #4F46E5;
 }
 
 .bpw-keyboard-quick_reply {
