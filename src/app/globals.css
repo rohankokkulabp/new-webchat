@@ -8,16 +8,3 @@ body {
   background-color: white;
 }
 
-.rectangular-shape {
-  position: fixed;
-  width: 500px;
-  top: 10%;
-  height: 720px;
-  background-color: rgb(104, 23, 255);
-  left: 20%
-}
-
-
-.bp-widget-web .bp-widget-side {
-  display: none;
-}
